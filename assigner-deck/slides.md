@@ -9,7 +9,6 @@ author: Assigner Team
 transition: slide-left
 class: text-center title-slide
 aspectRatio: 16/9
-css: style.css
 ---
 
 <div class="layout-center animate-fade-up">
@@ -334,3 +333,7 @@ Seeking **pilot partners** to trial Assigner across storm response zones
 </div>
 
 </div>
+
+<style>
+@import url('./style.css');
+</style>
