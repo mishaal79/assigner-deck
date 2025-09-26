@@ -1,0 +1,10 @@
+{
+  "buildCommand": "cd assigner-deck && npm run build",
+  "devCommand": "cd assigner-deck && npm run dev",
+  "installCommand": "cd assigner-deck && npm install",
+  "outputDirectory": "assigner-deck/dist",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
