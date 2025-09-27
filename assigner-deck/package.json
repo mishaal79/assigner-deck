@@ -3,9 +3,12 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open",
-    "export": "slidev export"
+    "validate": "node validate-slides.js",
+    "build": "npm run validate && slidev build",
+    "dev": "npm run validate && slidev --open",
+    "export": "npm run validate && slidev export",
+    "dev:unsafe": "slidev --open",
+    "build:unsafe": "slidev build"
   },
   "dependencies": {
     "@slidev/cli": "^52.2.4",

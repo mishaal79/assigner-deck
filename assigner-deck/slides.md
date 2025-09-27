@@ -9,6 +9,8 @@ author: Assigner Team
 transition: slide-left
 class: text-center title-slide
 aspectRatio: 16/9
+canvasWidth: 980
+canvasHeight: 552
 fonts:
   sans: 'Arya, ui-sans-serif, system-ui, sans-serif'
   weights: '400,700'
@@ -299,65 +301,43 @@ class: animate-fade-up
 
 <div class="section-divider"></div>
 
-<div class="layout-two-cols">
-
-<div>
-
 ## **Assignar's Intelligence Stack**
 
-Multi-layered AI system with **autonomous decision-making**:
+Multi-layered AI system with **autonomous decision-making**
 
-- 🧠 **Proprietary AI Models**
-- ⚡ **Real-time Processing**
-- 🔄 **Continuous Learning**
-- 🛡️ **Built-in Safety Guards**
-
-<div class="feature-box mt-6">
-
-**Key Differentiators:**
-
-✅ **Self-optimizing** job allocation
-
-✅ **Predictive** maintenance scheduling
-
-✅ **Autonomous** compliance monitoring
-
-</div>
-
-</div>
-
-<div>
+<div class="layout-center">
 
 ```mermaid
 flowchart TD
-    A[Data Ingestion Layer] --> B[AI Processing Engine]
-    B --> C[Decision Orchestrator]
-    C --> D[Action Executor]
+    A["🔄 Data Ingestion<br/>Photos • IoT • Documents"] --> B["🧠 AI Processing<br/>Damage Analysis • Safety • Matching"]
+    B --> C["⚡ Decision Engine<br/>Optimization • Validation"]
+    C --> D["📱 Action Delivery<br/>Notifications • Work Orders"]
 
-    A --> A1[Photos/Videos]
-    A --> A2[IoT Sensors]
-    A --> A3[Documents]
-    A --> A4[Government DBs]
-
-    B --> B1[Damage Assessment AI]
-    B --> B2[Safety Analysis AI]
-    B --> B3[Contractor Matching AI]
-    B --> B4[Risk Prediction AI]
-
-    C --> C1[Multi-factor Optimization]
-    C --> C2[Compliance Validation]
-    C --> C3[Resource Allocation]
-
-    D --> D1[Mobile Notifications]
-    D --> D2[Work Order Generation]
-    D --> D3[Report Creation]
-    D --> D4[Dashboard Updates]
-
-    style A fill:#A4161A,stroke:#E5383B,color:#FFFFFF
-    style B fill:#A4161A,stroke:#E5383B,color:#FFFFFF
-    style C fill:#A4161A,stroke:#E5383B,color:#FFFFFF
-    style D fill:#A4161A,stroke:#E5383B,color:#FFFFFF
+    style A fill:#A4161A,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style B fill:#BA181B,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style C fill:#E5383B,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style D fill:#660708,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
 ```
+
+</div>
+
+<div class="layout-two-cols pt-6">
+
+<div class="feature-box">
+
+**🧠 Proprietary AI Models**
+- Real-time damage assessment
+- Intelligent contractor matching
+- Predictive risk analysis
+
+</div>
+
+<div class="feature-box">
+
+**⚡ Key Advantages**
+- Self-optimizing allocation
+- Continuous learning
+- Built-in safety guards
 
 </div>
 
@@ -375,22 +355,32 @@ class: animate-slide-in
 <div class="layout-center">
 
 ```mermaid
-gantt
-    title Concurrent Job Capacity Comparison
-    dateFormat X
-    axisFormat %s
+flowchart LR
+    subgraph P["Prime Eco Tech - LIMITED"]
+        P1["Manual Processes<br/>👤 High Admin Load"]
+        P2["CRM Bottlenecks<br/>⚠️ System Strain"]
+        P3["Failure Point<br/>❌ 100K Max Jobs"]
+        P1 --> P2 --> P3
+    end
 
-    section Prime Eco Tech
-    Manual Processes           :done, primemanual, 0, 20000
-    CRM Bottlenecks           :done, primecrm, 20000, 50000
-    System Strain             :crit, primestrain, 50000, 80000
-    Failure Point             :crit, primefail, 80000, 100000
+    subgraph A["Assignar - UNLIMITED"]
+        A1["AI-First Design<br/>🤖 Zero Bottlenecks"]
+        A2["Smart Distribution<br/>⚡ Auto-Scaling"]
+        A3["Infinite Capacity<br/>∞ Unlimited Jobs"]
+        A1 --> A2 --> A3
+    end
 
-    section Assignar
-    AI-First Architecture     :active, assignarbase, 0, 100000
-    Distributed Processing    :assignardist, 100000, 500000
-    Infinite Scalability      :assignarinf, 500000, 1000000
+    style P fill:#660708,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style A fill:#A4161A,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style P1 fill:#BA181B,stroke:#FFFFFF,color:#FFFFFF
+    style P2 fill:#BA181B,stroke:#FFFFFF,color:#FFFFFF
+    style P3 fill:#660708,stroke:#FFFFFF,color:#FFFFFF
+    style A1 fill:#E5383B,stroke:#FFFFFF,color:#FFFFFF
+    style A2 fill:#A4161A,stroke:#FFFFFF,color:#FFFFFF
+    style A3 fill:#BA181B,stroke:#FFFFFF,color:#FFFFFF
 ```
+
+</div>
 
 <div class="layout-two-cols pt-8">
 
@@ -430,8 +420,6 @@ gantt
 
 </div>
 
-</div>
-
 ---
 layout: default
 class: animate-fade-up
@@ -444,39 +432,28 @@ class: animate-fade-up
 <div class="layout-center">
 
 ```mermaid
-graph TB
-    A[Assignar Platform] --> B[DSS Electrical]
-    A --> C[Insurer Builders - Dakwal]
-    A --> D[KBA Construction]
-    A --> E[Government Databases]
-    A --> F[Insurance Providers]
+flowchart TD
+    A["🎯 Assignar Platform<br/>Central Hub"]
 
-    B --> B1[Licensed Electricians]
-    B --> B2[Safety Certifications]
-    B --> B3[Work History Data]
+    A --> B["⚡ DSS Electrical<br/>Premium Contractors"]
+    A --> C["🏗️ Dakwal Builders<br/>Insurance Specialists"]
+    A --> D["🔧 KBA Construction<br/>Project Management"]
+    A --> E["🏛️ Government APIs<br/>License Verification"]
 
-    C --> C1[Building Specialists]
-    C --> C2[Insurance Claims]
-    C --> C3[Quality Assurance]
+    B --> B1["3,500+ Electricians"]
+    C --> C1["Restoration Experts"]
+    D --> D1["Large Projects"]
+    E --> E1["Real-time Compliance"]
 
-    D --> D1[Project Management]
-    D --> D2[Resource Allocation]
-    D --> D3[Compliance Tracking]
-
-    E --> E1[Contractor Licenses]
-    E --> E2[Safety Records]
-    E --> E3[Regulatory Updates]
-
-    F --> F1[Claim Processing]
-    F --> F2[Risk Assessment]
-    F --> F3[Payout Approval]
-
-    style A fill:#A4161A,stroke:#E5383B,color:#FFFFFF,stroke-width:4px
-    style B fill:#BA181B,stroke:#E5383B,color:#FFFFFF
-    style C fill:#BA181B,stroke:#E5383B,color:#FFFFFF
-    style D fill:#BA181B,stroke:#E5383B,color:#FFFFFF
-    style E fill:#660708,stroke:#E5383B,color:#FFFFFF
-    style F fill:#660708,stroke:#E5383B,color:#FFFFFF
+    style A fill:#A4161A,stroke:#FFFFFF,stroke-width:3px,color:#FFFFFF
+    style B fill:#BA181B,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style C fill:#BA181B,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style D fill:#BA181B,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style E fill:#E5383B,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style B1 fill:#660708,stroke:#FFFFFF,color:#FFFFFF
+    style C1 fill:#660708,stroke:#FFFFFF,color:#FFFFFF
+    style D1 fill:#660708,stroke:#FFFFFF,color:#FFFFFF
+    style E1 fill:#660708,stroke:#FFFFFF,color:#FFFFFF
 ```
 
 <div class="layout-two-cols pt-6">
@@ -558,33 +535,19 @@ AI-powered job allocation with **multi-factor optimization**:
 
 ```mermaid
 flowchart TD
-    A[New Job Request] --> B{Damage Assessment}
-    B --> C[Electrical Work?]
-    B --> D[Structural Work?]
-    B --> E[Emergency Priority?]
+    A["📝 New Job Request<br/>Photo + Details"] --> B["🤖 AI Analysis<br/>Damage + Requirements"]
 
-    C -->|Yes| F[Check DSS Electrical Availability]
-    D -->|Yes| G[Check KBA Construction Queue]
-    E -->|Yes| H[Priority Contractor Pool]
+    B --> C["🔍 Smart Matching<br/>Skills + Location + Capacity"]
 
-    F --> I{Location Analysis}
-    G --> I
-    H --> I
+    C --> D["✅ Optimal Contractor<br/>Verified + Available"]
 
-    I --> J[Calculate Travel Time]
-    J --> K[Check Contractor Capacity]
-    K --> L[Verify Licenses & Insurance]
-    L --> M[Score & Rank Options]
+    D --> E["📱 Instant Delivery<br/>Mobile Wallet + Tracking"]
 
-    M --> N[Optimal Match Found]
-    N --> O[Auto-Generate Work Order]
-    O --> P[Send to Mobile Wallet]
-    P --> Q[Real-time Tracking]
-
-    style A fill:#E5383B,stroke:#FFFFFF,color:#FFFFFF
-    style N fill:#A4161A,stroke:#E5383B,color:#FFFFFF
-    style O fill:#A4161A,stroke:#E5383B,color:#FFFFFF
-    style P fill:#A4161A,stroke:#E5383B,color:#FFFFFF
+    style A fill:#E5383B,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style B fill:#A4161A,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style C fill:#BA181B,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style D fill:#660708,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style E fill:#A4161A,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
 ```
 
 </div>
