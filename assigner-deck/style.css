@@ -37,9 +37,9 @@ body {
   color: var(--color-white);
 }
 
-/* Main slide container with viewport constraints */
+/* Main slide container with professional gradient backgrounds */
 .slidev-layout {
-  background: linear-gradient(135deg, var(--color-darkest) 0%, var(--color-dark) 100%);
+  background: radial-gradient(ellipse at center, #161A1D 0%, #0B090A 80%, #000000 100%);
   color: var(--color-white);
   font-family: var(--slidev-font-sans);
   height: 100vh;
@@ -50,6 +50,29 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+
+/* Add subtle overlay pattern for depth */
+.slidev-layout::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(164, 22, 26, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(186, 24, 27, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 60%, rgba(229, 56, 59, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure content appears above background overlay */
+.slidev-layout > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* Optimized Typography System for Presentations */

@@ -15,6 +15,8 @@ fonts:
   sans: 'Arya, ui-sans-serif, system-ui, sans-serif'
   weights: '400,700'
   provider: google
+head: |
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
 ---
 
 <div class="layout-center animate-fade-up">
@@ -309,9 +311,9 @@ Multi-layered AI system with **autonomous decision-making**
 
 ```mermaid
 flowchart TD
-    A["🔄 Data Ingestion<br/>Photos • IoT • Documents"] --> B["🧠 AI Processing<br/>Damage Analysis • Safety • Matching"]
-    B --> C["⚡ Decision Engine<br/>Optimization • Validation"]
-    C --> D["📱 Action Delivery<br/>Notifications • Work Orders"]
+    A["fa:fa-upload Data Ingestion<br/>Photos • IoT • Documents"] --> B["fa:fa-brain AI Processing<br/>Damage Analysis • Safety • Matching"]
+    B --> C["fa:fa-bolt Decision Engine<br/>Optimization • Validation"]
+    C --> D["fa:fa-mobile Action Delivery<br/>Notifications • Work Orders"]
 
     style A fill:#A4161A,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
     style B fill:#BA181B,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
@@ -357,16 +359,16 @@ class: animate-slide-in
 ```mermaid
 flowchart LR
     subgraph P["Prime Eco Tech - LIMITED"]
-        P1["Manual Processes<br/>👤 High Admin Load"]
-        P2["CRM Bottlenecks<br/>⚠️ System Strain"]
-        P3["Failure Point<br/>❌ 100K Max Jobs"]
+        P1["fa:fa-user Manual Processes<br/>High Admin Load"]
+        P2["fa:fa-exclamation-triangle CRM Bottlenecks<br/>System Strain"]
+        P3["fa:fa-times Failure Point<br/>100K Max Jobs"]
         P1 --> P2 --> P3
     end
 
     subgraph A["Assignar - UNLIMITED"]
-        A1["AI-First Design<br/>🤖 Zero Bottlenecks"]
-        A2["Smart Distribution<br/>⚡ Auto-Scaling"]
-        A3["Infinite Capacity<br/>∞ Unlimited Jobs"]
+        A1["fa:fa-robot AI-First Design<br/>Zero Bottlenecks"]
+        A2["fa:fa-rocket Smart Distribution<br/>Auto-Scaling"]
+        A3["fa:fa-infinity Infinite Capacity<br/>Unlimited Jobs"]
         A1 --> A2 --> A3
     end
 
@@ -433,17 +435,17 @@ class: animate-fade-up
 
 ```mermaid
 flowchart TD
-    A["🎯 Assignar Platform<br/>Central Hub"]
+    A["fa:fa-bullseye Assignar Platform<br/>Central Hub"]
 
-    A --> B["⚡ DSS Electrical<br/>Premium Contractors"]
-    A --> C["🏗️ Dakwal Builders<br/>Insurance Specialists"]
-    A --> D["🔧 KBA Construction<br/>Project Management"]
-    A --> E["🏛️ Government APIs<br/>License Verification"]
+    A --> B["fa:fa-bolt DSS Electrical<br/>Premium Contractors"]
+    A --> C["fa:fa-building Dakwal Builders<br/>Insurance Specialists"]
+    A --> D["fa:fa-tools KBA Construction<br/>Project Management"]
+    A --> E["fa:fa-university Government APIs<br/>License Verification"]
 
-    B --> B1["3,500+ Electricians"]
-    C --> C1["Restoration Experts"]
-    D --> D1["Large Projects"]
-    E --> E1["Real-time Compliance"]
+    B --> B1["fa:fa-hard-hat 3,500+ Electricians"]
+    C --> C1["fa:fa-wrench Restoration Experts"]
+    D --> D1["fa:fa-project-diagram Large Projects"]
+    E --> E1["fa:fa-check-circle Real-time Compliance"]
 
     style A fill:#A4161A,stroke:#FFFFFF,stroke-width:3px,color:#FFFFFF
     style B fill:#BA181B,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
@@ -535,13 +537,13 @@ AI-powered job allocation with **multi-factor optimization**:
 
 ```mermaid
 flowchart TD
-    A["📝 New Job Request<br/>Photo + Details"] --> B["🤖 AI Analysis<br/>Damage + Requirements"]
+    A["fa:fa-file-text New Job Request<br/>Photo + Details"] --> B["fa:fa-brain AI Analysis<br/>Damage + Requirements"]
 
-    B --> C["🔍 Smart Matching<br/>Skills + Location + Capacity"]
+    B --> C["fa:fa-search Smart Matching<br/>Skills + Location + Capacity"]
 
-    C --> D["✅ Optimal Contractor<br/>Verified + Available"]
+    C --> D["fa:fa-check-circle Optimal Contractor<br/>Verified + Available"]
 
-    D --> E["📱 Instant Delivery<br/>Mobile Wallet + Tracking"]
+    D --> E["fa:fa-mobile Instant Delivery<br/>Mobile Wallet + Tracking"]
 
     style A fill:#E5383B,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
     style B fill:#A4161A,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF

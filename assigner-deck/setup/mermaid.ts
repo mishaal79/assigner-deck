@@ -97,8 +97,7 @@ export default defineMermaidSetup(() => {
       nodeSpacing: 50,
       rankSpacing: 60,
       curve: 'basis',
-      htmlLabels: false,
-      useMaxWidth: true
+      htmlLabels: false
     },
 
     // Sequence diagram config
