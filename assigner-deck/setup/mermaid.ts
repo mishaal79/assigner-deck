@@ -4,27 +4,27 @@ export default defineMermaidSetup(() => {
   return {
     theme: 'base',
     themeVariables: {
-      // Assignar Brand Colors
+      // Assignar Brand Colors - High Contrast
       primaryColor: '#A4161A',        // Ruby red - main elements
       primaryTextColor: '#FFFFFF',    // White text
-      primaryBorderColor: '#E5383B',  // Cinnabar - borders
-      lineColor: '#E5383B',           // Connection lines
+      primaryBorderColor: '#FFFFFF',  // White borders for visibility
+      lineColor: '#FFFFFF',           // White connection lines
 
       // Background colors
-      background: '#0B090A',          // Rich black
-      secondaryColor: '#161A1D',      // Eerie black - secondary elements
-      tertiaryColor: '#660708',       // Blood red - tertiary
+      background: 'transparent',      // Transparent background
+      secondaryColor: '#BA181B',      // Fire brick - secondary elements
+      tertiaryColor: '#E5383B',       // Cinnabar - tertiary
 
-      // Node specific colors
+      // Node specific colors - Better contrast
       nodeBkg: '#A4161A',            // Node backgrounds
       nodeTextColor: '#FFFFFF',       // Node text
-      nodeBorder: '#E5383B',         // Node borders
+      nodeBorder: '#FFFFFF',         // White borders
 
-      // Flowchart specific
+      // Flowchart specific - Enhanced visibility
       flowchartBkg: '#A4161A',
-      flowchartNodeBorder: '#E5383B',
+      flowchartNodeBorder: '#FFFFFF',
       flowchartNodeText: '#FFFFFF',
-      flowchartLinkText: '#F5F3F4',
+      flowchartLinkText: '#FFFFFF',
 
       // Activity diagram
       actorBkg: '#A4161A',
@@ -86,14 +86,19 @@ export default defineMermaidSetup(() => {
     // Additional configuration
     startOnLoad: true,
     securityLevel: 'loose',
-    theme: 'base',
 
-    // Flowchart specific config
+    // Enable max width scaling
+    useMaxWidth: true,
+
+
+    // Flowchart specific config - Simple and reliable
     flowchart: {
       diagramPadding: 20,
       nodeSpacing: 50,
-      rankSpacing: 50,
-      curve: 'basis'
+      rankSpacing: 60,
+      curve: 'basis',
+      htmlLabels: false,
+      useMaxWidth: true
     },
 
     // Sequence diagram config
@@ -109,14 +114,14 @@ export default defineMermaidSetup(() => {
       messageMargin: 35
     },
 
-    // Gantt config
+    // Gantt config - Improved readability
     gantt: {
-      leftPadding: 75,
-      gridLineStartPadding: 35,
-      fontSize: 11,
+      leftPadding: 100,
+      gridLineStartPadding: 50,
+      fontSize: 14,
       fontFamily: '"Arya", Arial, sans-serif',
-      sectionFontSize: 24,
-      barHeight: 20,
+      sectionFontSize: 20,
+      barHeight: 25,
       numberSectionStyles: 4
     }
   }

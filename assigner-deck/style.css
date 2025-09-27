@@ -37,52 +37,60 @@ body {
   color: var(--color-white);
 }
 
-/* Main slide container */
+/* Main slide container with viewport constraints */
 .slidev-layout {
   background: linear-gradient(135deg, var(--color-darkest) 0%, var(--color-dark) 100%);
   color: var(--color-white);
   font-family: var(--slidev-font-sans);
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Typography System */
+/* Optimized Typography System for Presentations */
 h1 {
   font-family: var(--slidev-font-sans);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--color-accent);
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
+  margin-bottom: 0.8rem;
+  line-height: 1.1;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: var(--color-accent-bright);
-  margin-bottom: 1rem;
-  line-height: 1.3;
+  margin-bottom: 0.6rem;
+  line-height: 1.2;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--color-accent-secondary);
-  margin-bottom: 0.8rem;
-  line-height: 1.4;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--color-white);
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.3rem;
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--color-bg-light);
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
 }
 
 strong {
@@ -106,15 +114,17 @@ a:hover {
   color: var(--color-accent-secondary);
 }
 
-/* Lists */
+/* Compact Lists */
 ul, ol {
   color: var(--color-bg-light);
-  padding-left: 1.5rem;
+  padding-left: 1.2rem;
+  margin: 0.4rem 0;
 }
 
 li {
-  margin-bottom: 0.5rem;
-  line-height: 1.5;
+  margin-bottom: 0.3rem;
+  line-height: 1.3;
+  font-size: 0.95rem;
 }
 
 li::marker {
@@ -170,29 +180,32 @@ blockquote {
   color: var(--color-white) !important;
 }
 
-/* Metric/Statistics styling */
+/* Compact Metrics */
 .metric {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--color-accent-secondary);
   display: block;
-  line-height: 1;
+  line-height: 0.9;
+  margin-bottom: 0.2rem;
 }
 
 .metric-label {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: var(--color-neutral);
   font-weight: 400;
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
+  line-height: 1.1;
 }
 
-/* Feature highlight boxes */
+/* Compact Feature Boxes */
 .feature-box {
   background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-accent-dark) 100%);
   border: 1px solid var(--color-accent);
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin: 1rem 0;
+  border-radius: 8px;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
 }
 
 .feature-box h3 {
@@ -221,12 +234,12 @@ blockquote {
   box-shadow: 0 4px 12px rgba(228, 56, 59, 0.3);
 }
 
-/* Section dividers */
+/* Compact Section Dividers */
 .section-divider {
   background: var(--color-accent);
-  height: 4px;
-  width: 100px;
-  margin: 2rem 0;
+  height: 3px;
+  width: 60px;
+  margin: 0.8rem 0;
   border-radius: 2px;
 }
 
@@ -254,22 +267,30 @@ blockquote {
   background: var(--color-accent) !important;
 }
 
-/* Custom slide layouts */
+/* Viewport-Constrained Layouts */
 .layout-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem;
+  padding: 0.5rem;
+  height: 100%;
+  max-height: calc(100vh - 2rem);
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .layout-two-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
   align-items: start;
-  padding: 2rem;
+  padding: 0.5rem;
+  height: 100%;
+  max-height: calc(100vh - 2rem);
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 /* Animations */
@@ -303,22 +324,118 @@ blockquote {
   animation: fadeInUp 0.8s ease-out;
 }
 
-/* Responsive design */
+/* Viewport-Constrained Mermaid Diagrams - Simple and reliable */
+.mermaid {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 70vh; /* Simple viewport constraint */
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+  overflow: hidden; /* Prevent overflow */
+  box-sizing: border-box;
+}
+
+.mermaid svg {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 100%;
+  background: transparent;
+  display: block;
+}
+
+/* Fix diagram containers */
+.slidev-layout .mermaid {
+  overflow: visible;
+  margin: 1rem 0;
+}
+
+/* Better diagram text visibility */
+.mermaid .node text,
+.mermaid .edgeLabel {
+  font-family: var(--slidev-font-sans) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  fill: #FFFFFF !important;
+}
+
+/* Improve diagram spacing on smaller screens */
+@media (max-width: 1024px) {
+  .mermaid {
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .mermaid {
+    transform: scale(0.6);
+    transform-origin: center;
+  }
+}
+
+/* Enhanced Responsive Design */
 @media (max-width: 768px) {
   h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .layout-two-cols {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .metric {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .feature-box {
+    padding: 0.6rem;
+    margin: 0.3rem 0;
   }
 }
+
+/* Presentation viewport constraints */
+@media (min-aspect-ratio: 16/9) {
+  .slidev-layout {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-aspect-ratio: 4/3) {
+  .slidev-layout {
+    padding: 0.4rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .layout-two-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Force content to stay in viewport */
+.slidev-layout > * {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+/* Utility classes for spacing control */
+.pt-4 { padding-top: 0.5rem !important; }
+.pt-6 { padding-top: 0.8rem !important; }
+.pt-8 { padding-top: 1rem !important; }
+.pt-12 { padding-top: 1.2rem !important; }
+
+.mb-4 { margin-bottom: 0.5rem !important; }
+.mb-6 { margin-bottom: 0.8rem !important; }
+.mt-4 { margin-top: 0.5rem !important; }
+.mt-6 { margin-top: 0.8rem !important; }
